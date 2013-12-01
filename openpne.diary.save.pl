@@ -1,5 +1,15 @@
 #!/usr/bin/perl
+# 
 # OpenPNE の日記を全部ローカルに保存する
+# 
+# 引数1: --username=<username>
+# 引数2: --password=<password>
+# 引数3: --url=http://openpne.example.com/
+# 
+# 引数3個は全て必須。ログイン用のID、ログイン用のPW、トップページのURL、を指定する
+# 
+# 出力： 日記1件につき1ファイル生成、ファイル名はカレントディレクトリの d_日記ID.html
+# 
 
 use utf8;
 use Encode;
